@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/imgcreate"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116"
+        app:srcCompat="@drawable/group_3" />
+
+    <TextView
+        android:id="@+id/txtnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="CREATE NEW ACCOUNT"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgcreate"
+        app:layout_constraintEnd_toStartOf="@+id/imgcreate"
+        app:layout_constraintTop_toTopOf="@+id/imgcreate" />
+
+    <EditText
+        android:id="@+id/txtregname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Your name"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/txtnew"
+        app:layout_constraintStart_toStartOf="@+id/txtnew"
+        app:layout_constraintTop_toBottomOf="@+id/txtnew" />
+
+    <EditText
+        android:id="@+id/txtregmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/txtregname"
+        app:layout_constraintStart_toStartOf="@+id/txtregname"
+        app:layout_constraintTop_toBottomOf="@+id/txtregname" />
+
+    <EditText
+        android:id="@+id/txtregpass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Type password"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/txtregmail"
+        app:layout_constraintStart_toStartOf="@+id/txtregmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtregmail" />
+
+    <EditText
+        android:id="@+id/txtregpass2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Type password"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/txtregpass"
+        app:layout_constraintStart_toStartOf="@+id/txtregpass"
+        app:layout_constraintTop_toBottomOf="@+id/txtregpass" />
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="250dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#FF9F9F"
+        android:text="REGISTER"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtregpass2"
+        app:layout_constraintStart_toStartOf="@+id/txtregpass2"
+        app:layout_constraintTop_toBottomOf="@+id/txtregpass2" />
+
+    <Button
+        android:id="@+id/btnresgoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableLeft="@drawable/grommet_icons_google"
+        android:text="REGISTER WITH GOOGLE"
+        android:textColor="#2196F3"
+        app:layout_constraintEnd_toEndOf="@+id/btnregister"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnregister"
+        app:layout_constraintTop_toBottomOf="@+id/btnregister" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnresgoogle"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/btnresgoogle"
+        app:layout_constraintTop_toBottomOf="@+id/btnresgoogle"
+        app:srcCompat="@drawable/intersect" />
+
+    <TextView
+        android:id="@+id/txthaveacc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="80dp"
+        android:text="Already have an account?"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnresgoogle"
+        app:layout_constraintTop_toBottomOf="@+id/btnresgoogle" />
+
+    <Button
+        android:id="@+id/btnregsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/txthaveacc"
+        app:layout_constraintStart_toEndOf="@+id/txthaveacc"
+        app:layout_constraintTop_toTopOf="@+id/txthaveacc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
